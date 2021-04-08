@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -60,6 +61,13 @@
                                     <action selector="insert100000Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Dz-4K-0XC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-kW-PPj">
+                                <rect key="frame" x="70" y="529" width="274" height="30"/>
+                                <state key="normal" title="INSERT 1 million with prepare statement"/>
+                                <connections>
+                                    <action selector="insert1millionStatementTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIx-Hs-G4g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,9 +75,11 @@
                             <constraint firstItem="AeL-Xr-CLg" firstAttribute="top" secondItem="1Gz-3m-RsZ" secondAttribute="bottom" constant="20" id="CZk-GM-zzv"/>
                             <constraint firstItem="AeL-Xr-CLg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="I4B-Tr-TEd"/>
                             <constraint firstItem="1Gz-3m-RsZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JAY-Ec-iT1"/>
+                            <constraint firstItem="ysJ-kW-PPj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pil-Hp-6t4"/>
                             <constraint firstItem="8et-mK-iha" firstAttribute="top" secondItem="AeL-Xr-CLg" secondAttribute="bottom" constant="21" id="Wsd-Cj-XWc"/>
                             <constraint firstItem="AeL-Xr-CLg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WtC-1n-y3P"/>
                             <constraint firstItem="1Gz-3m-RsZ" firstAttribute="top" secondItem="Qdv-ns-HKz" secondAttribute="bottom" constant="8" symbolic="YES" id="XYl-pt-RAG"/>
+                            <constraint firstItem="ysJ-kW-PPj" firstAttribute="top" secondItem="8et-mK-iha" secondAttribute="bottom" constant="8" symbolic="YES" id="Yjo-AV-rCV"/>
                             <constraint firstItem="Qdv-ns-HKz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aIt-fc-52f"/>
                             <constraint firstItem="iHk-Sg-hhG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cGw-jM-5QV"/>
                             <constraint firstItem="8et-mK-iha" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nSb-do-B4y"/>
